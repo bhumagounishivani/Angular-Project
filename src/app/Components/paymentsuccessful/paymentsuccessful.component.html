@@ -1,0 +1,18 @@
+<div>
+    <div fxLayoutAlign="center">
+      <div fxFlex="40%" fxFlex.xs="100%" fxFlex.sm="100%">
+        <mat-card>
+            <mat-card-content>
+                <div class="checks">
+                    <i class="fa fa-check"></i>
+                </div>
+                <p id="text">Payment Successful</p>
+                <p class="no">Transaction No:{{transaction_num}}</p>
+                <p class="no">Amount paid: <span style="color: red;">{{price | currency: 'INR'}}</span></p>
+            </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <mat-sidenav-container class="example-container">
+            <mat-sidenav  #sidenav mode="side" role="navigation" class="mat-elevation-z8">
+                <div class="div1">
+                    <div>
+                        <button mat-button (click)="sidenav.close()" class="cancel" style="float:right">
+                            <i class="fa fa-window-close"></i>
+                        </button>
+                    </div>
+                    <div *ngIf="loggedIn" class="user">
+                        <i class="fa fa-user iconuser"></i>
+                        <p class="username">{{name}}</p>
+                    </div>
+                </div>
+                <mat-nav-list>
+                    <div class="navitem">
+                        <a routerLink='/home' (click)="sidenav.close()" mat-list-item>Home</a>
+                    </div>
+                    <div class="navitem">
+                        <a routerLink='/about' mat-list-item (click)="sidenav.close()">About</a>
+                    </div>
+                    <div class="navitem">
+                        <a [routerLink]="['/contact']" mat-list-item (click)="sidenav.close()">Contact</a>
+                    </div>
+                    <a class="hid1" routerLink='/veg' mat-list-item (click)="sidenav.close()">Vegetables</a>
+                    <a class="hid1" mat-list-item [routerLink]="['/fruit']" (click)="sidenav.close()">Fruits</a>
+                </mat-nav-list>
+                
+            </mat-sidenav>
+            <mat-sidenav-content>
+                <mat-toolbar color="primary">
+                    <button mat-icon-button (click)="sidenav.toggle()">
+                        <mat-icon>menu</mat-icon>
+                    </button>
+                    <span><a routerLink='/home'>BigMart</a></span>
+                    <button mat-button class="hid">
+                        <a class="hid1" routerLink='/home'>Home</a>
+                    </button>
+                    <button mat-button class="hid">
+                        <a class="hid1" routerLink='/about'>About</a>
+                    </button>
+                    <button mat-button class="hid">
+                        <a class="hid1" [routerLink]="['/contact']">Contact</a>
+                    </button>
+                    <span class="example-spacer"></span>
+                    
+                    <div class="dropdown">
+                        <button mat-icon-button class="dropbtn">
+                            <mat-icon>account_circle</mat-icon>
+                        </button>
+                        <div class="dropdown-content">
+                            <a [routerLink]="['/profile']">Your Profile</a>
+                            <a [routerLink]="['/order']">Your Orders</a>
+                            <a (click)="logout()" style="cursor: pointer;">Logout</a>
+                        </div>
+                    </div>
+                    <a class="signin" routerLink='/signin'><i class="fa fa-user" aria-hidden="true"></i> Sign in</a>
+                    <a [routerLink]="['/cart']"
+                     class="cart"><i class="fa fa-shopping-cart"></i></a>
+                </mat-toolbar>
+              <div class="wrap" style="float: right;">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="What are you looking for?" (change)="search($event)" (keyup.enter)="nav()">
+                    <button type="submit" class="searchButton" (click)="nav()">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+              </div><br><br>
+              <div style="margin-top:15px;">
+                <router-outlet></router-outlet>
+              </div><br><br>
+              <div>
+                <app-footer></app-footer>
+            </div>            
+            </mat-sidenav-content>
+          </mat-sidenav-container>
+    
+    </body>
+</html>

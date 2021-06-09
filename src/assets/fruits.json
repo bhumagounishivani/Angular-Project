@@ -1,0 +1,115 @@
+[
+  {
+    "id":"101",
+    "name" : "Apple",
+    "filename": "apple.jpeg",
+    "price": "170",
+    "rating":"5",
+    "quantity":"5pc" 
+  },
+  {
+    "id":"102",
+    "name" : "Green Apple",
+    "filename": "apple(green).jpg",
+    "price": "190",
+    "rating":"5",
+    "quantity":"5pc"
+  },
+  {
+    "id":"103",
+    "name" : "Banana",
+    "filename": "banana.jpg",
+    "price": "40",
+    "rating":"4",
+    "quantity":"1dz"
+  },
+  {
+    "id":"104",
+    "name" : "Cherry",
+    "filename": "cherry.jpg",
+    "price": "30",
+    "rating":"3",
+    "quantity":"50g"
+  },
+  {
+    "id":"105",
+    "name" : "Guava",
+    "filename": "guava.jpg",
+    "price": "49",
+    "rating":"4",
+    "quantity":"4pc"
+  },
+  {
+    "id":"106",
+    "name" : "Kiwi",
+    "filename": "kiwi.jpg",
+    "price": "60",
+    "rating":"3",
+    "quantity":"4pc"
+  },
+  {
+    "id":"107",
+    "name" : "Lemon",
+    "filename": "lemon.jpg",
+    "price": "15",
+    "rating":"3",
+    "quantity":"7pc"
+
+  },
+  {
+    "id":"108",
+    "name" : "Muskmelon",
+    "filename": "muskmelon.jpg",
+    "price": "20",
+    "rating":"4",
+    "quantity":"1pc"
+  },
+  {
+    "id":"109",
+    "name" : "Orange",
+    "filename": "orange.jpg",
+    "price": "62",
+    "rating":"3",
+    "quantity":"6pc"
+  },
+  {
+    "id":"110",
+    "name" : "Papaya",
+    "filename": "papaya.png",
+    "price": "27",
+    "rating":"3",
+    "quantity":"1pc"
+  },
+  {
+    "id":"111",
+    "name" : "Pineapple",
+    "filename": "pineapple.jpg",
+    "price": "20",
+    "rating":"5",
+    "quantity":"1pc" 
+  },
+  {
+    "id":"112",
+    "name" : "Pomegranate",
+    "filename": "pomegranate.jpg",
+    "price": "140",
+    "rating":"4",
+    "quantity":"2pc"
+  },
+  {
+    "id":"113",
+    "name" : "Sapodilla",
+    "filename": "sapodilla.jpg",
+    "price": "49",
+    "rating":"3",
+    "quantity":"6pc"
+  },
+  {
+    "id":"114",
+    "name" : "Strawberry",
+    "filename": "strawberry.jpg",
+    "price": "50",
+    "rating":"5",
+    "quantity":"1pack"
+  }
+  ]

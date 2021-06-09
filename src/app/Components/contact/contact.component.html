@@ -1,0 +1,28 @@
+<div class="sec">
+    <p class="contact">Contact Us!</p>
+</div>
+<mat-card>
+    <mat-card-content>
+        <form (ngSubmit)="form.valid&&submitForm(form1)" #form1="ngForm" [formGroup]="form">
+            <mat-form-field>
+                <input matInput placeholder="User Name" name="username" formControlName="username">
+                <mat-error *ngIf="form.controls['username'].errors?.required">Username is required</mat-error>
+                <mat-error *ngIf="form.controls['username'].errors?.pattern">Username is invalid</mat-error>
+                <mat-icon matSuffix>perm_identity</mat-icon>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Email" name="email" formControlName="email">
+                <mat-error *ngIf="form.controls['email'].errors && form.controls['email'].errors.required">Email is required</mat-error>
+                <mat-error *ngIf="form.controls['email'].errors && form.controls['email'].errors.email">Email is invalid</mat-error>
+                <mat-icon matSuffix>email</mat-icon>
+               <!-- {{ form.get('email')?.value }}-->
+            </mat-form-field>
+            <mat-form-field>
+                <textarea  matInput placeholder="Message" name="message" formControlName="message"></textarea>
+                <mat-error *ngIf="form.controls['message'].errors?.required">Message is required</mat-error>
+            </mat-form-field>
+            
+            <button mat-raised-button color="primary" class="login-button">Submit</button>
+        </form>
+    </mat-card-content>
+</mat-card>

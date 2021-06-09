@@ -1,0 +1,44 @@
+[
+    {
+        "id" : "19bd1a05608ab8d5d5a3e620707d6201",
+        "name" : "Tomatoes",
+        "quantity": "1",
+        "filename":"tomato.jpg",
+        "cost":"8"
+      },
+      {
+        "id" : "19bd1a05608ab8d5d5a3e620707d6202",
+        "name" : "Cucumber",
+        "filename": "cucumber.jpg",
+        "quantity": "1",
+        "cost":"24"
+      },
+      {
+        "id" : "19bd1a05608ab8d5d5a3e620707d6203",
+        "name" : "Banana",
+        "filename": "banana.jpg",
+        "quantity": "1",
+        "cost":"40"
+      },
+      {
+        "id" : "19bd1a05608ab8d5d5a3e620707d6204",
+       "name" : "Pineapple",
+       "filename": "pineapple.jpg",
+        "quantity": "1",
+        "cost":"20"
+      },
+      {
+        "id" : "19bd1a05608ab8d5d5a3e620707d6205",
+       "name" : "Brinjal",
+        "quantity": "1",
+        "filename": "brinjal.jpg",
+        "cost":"16"
+      },
+      {
+        "id" : "19bd1a05608ab8d5d5a3e620707d6206",
+       "name" : "Bottle Gourd",
+       "filename": "bottlegourd.jpg",
+        "quantity": "1",
+        "cost":"11"
+      }
+]

@@ -1,0 +1,92 @@
+[{
+    "id" : "19bd1a05608ab8d5d5a3e620707d6225",
+    "filename":"bitter_gourd.jpg",
+    "name" : "Bitter Gourd",
+    "date": "2021-03-08",
+    "quantity": "2",
+    "cost":"46",
+    "status" : "delivered" 
+  },
+  {
+    "id" : "19bd1a05608ab8d5d5a3e620707d6226",
+    "filename":"tomato.jpg",
+    "name" : "Tomatoes",
+    "date": "2021-05-19",
+    "quantity": "3",
+    "cost":"24",
+    "status" : "processing"
+  },
+  {
+    "id" : "19bd1a05608ab8d5d5a3e620707d6227",
+    "filename":"onion.jpg",
+    "name" : "Onions",
+    "date": "2021-04-28",
+    "quantity": "4",
+    "cost":"80",
+    "status" : "delivered"
+  },
+  {
+    "id" : "19bd1a05608ab8d5d5a3e620707d6228",
+    "name" : "Cucumber",
+    "filename":"cucumber.jpg",
+    "date": "2021-05-18",
+    "quantity": "2",
+    "cost":"48",
+    "status" : "processing"
+  },
+  {
+    "id" : "19bd1a05608ab8d5d5a3e620707d6229",
+    "name" : "Green Chillies",
+    "filename":"chilli.jpg",
+    "date": "2021-05-01",
+    "quantity": "1",
+    "cost":"46",
+    "status" : "delivered" 
+  },
+  {
+    "id" : "19bd1a05608ab8d5d5a3e620707d622a",
+   "name" : "Apple",
+   "filename":"apple.jpeg",
+    "date": "2021-04-21",
+    "quantity": "5",
+    "cost":"170",
+    "status" : "delivered" 
+  },
+  {
+    "id" : "19bd1a05608ab8d5d5a3e620707d622b",
+    "name" : "Banana",
+    "filename":"banana.jpg",
+    "date": "2021-05-19",
+    "quantity": "2",
+    "cost":"80",
+    "status" : "processing" 
+  },
+  {
+    "id" : "19bd1a05608ab8d5d5a3e620707d622c",
+   "name" : "Orange",
+   "filename":"orange.jpg",
+    "date": "2021-03-09",
+    "quantity": "12",
+    "cost":"124",
+    "status" : "delivered" 
+  },
+  {
+    "id" : "19bd1a05608ab8d5d5a3e620707d622d",
+   "name" : "Pineapple",
+   "filename":"pineapple.jpg",
+    "date": "2021-05-18",
+    "quantity": "2",
+    "cost":"40",
+    "status" : "processing" 
+  },
+  {
+    "id" : "19bd1a05608ab8d5d5a3e620707d622e",
+    "name" : "Strawberry",
+    "filename":"strawberry.jpg",
+    "date": "2021-02-03",
+    "quantity": "2",
+    "cost":"100",
+    "status" : "delivered"
+  }
+  
+]

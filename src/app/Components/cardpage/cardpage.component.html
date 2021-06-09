@@ -1,0 +1,68 @@
+<div>
+    <p class="header">Payment</p>
+    <div fxLayoutAlign="center">
+        <div fxFlex="40%" fxFlex.xs="100%" fxFlex.sm="100%">
+            <mat-card class="mat-elevation-z12">
+                <mat-card-content>
+                    <div class="buttondiv">
+                        <button mat-raised-button (click)="displaycard()">Debit/Credit Card</button>
+                        <button mat-raised-button id="paypal" (click)="displaypaypal()">PayPal</button>
+                    </div>
+                    <div id="cardinfo">
+                        <form action="" [formGroup]="form1" (ngSubmit)="onSubmit()">
+                            <mat-form-field>
+                                <label for="username">Full name (on the card)</label>
+                                <input matInput type="text" name="username" formControlName="fullname">
+                                <mat-error *ngIf="form1.controls['fullname'].errors && form1.controls['fullname'].errors.required">Name is required</mat-error>
+                                <mat-error *ngIf="form1.controls['fullname'].errors && form1.controls['fullname'].errors.minlength && !form1.controls['fullname'].errors.pattern">Name should have atleast 7 characters</mat-error>
+                                <mat-error *ngIf="form1.controls['fullname'].errors && form1.controls['fullname'].errors.pattern">Name is invalid</mat-error>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <label for="cardNumber">Card number</label>
+                                <input matInput type="text" name="cardNumber" formControlName="cardno">
+                                <mat-error *ngIf="form1.controls['cardno'].errors && form1.controls['cardno'].errors.required">Card Number is required</mat-error>
+                                <mat-error *ngIf="form1.controls['cardno'].errors && form1.controls['cardno'].errors.LengthMismatch">Card Number has invalid length</mat-error>
+                                <mat-error *ngIf="form1.controls['cardno'].errors && form1.controls['cardno'].errors.InvalidCard">Card Number is invalid or not accepted</mat-error>
+                                <div matSuffix>
+                                    <span>
+                                        <i class="fa fa-cc-visa mx-1"></i>
+                                        <i class="fa fa-cc-amex mx-1"></i>
+                                        <i class="fa fa-cc-mastercard mx-1"></i>
+                                    </span>
+                                </div>
+                            </mat-form-field>
+                            <div class="divexpiry">
+                                <div>
+                                    <mat-form-field>
+                                        <label for="date">Expiration</label>
+                                        <input type="month" matInput name="date" formControlName="expiry">
+                                        <mat-error *ngIf="form1.controls['expiry'].errors && form1.controls['expiry'].errors.required">Expiry Date is required</mat-error>
+                                        <mat-error *ngIf="form1.controls['expiry'].errors && form1.controls['expiry'].errors.InvalidDate">Please check Expiry date</mat-error>
+                                    </mat-form-field>
+                                </div>
+                                <div>
+                                    <mat-form-field>
+                                        <label for="cvv">CVV <i class="fa fa-question-circle"></i></label>
+                                        <input type="text" matInput name="cvv" formControlName="password">
+                                        <mat-error *ngIf="form1.controls['password'].errors && form1.controls['password'].errors.required">CVV is required</mat-error>
+                                        <mat-error *ngIf="form1.controls['password'].errors && form1.controls['password'].errors.InvalidCVV">Invalid CVV</mat-error>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="divbutton">
+                                <a><button mat-raised-button type="submit" color="primary">Confirm</button></a>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="paypalinfo">
+                        <div class="paypallogin">
+                            <strong id="info">Paypal is easiest way to pay online</strong>
+                            <button mat-raised-button color="primary" id="login">Log into Paypal</button>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,162 @@
+[
+  {
+    "id":"1",
+    "name" : "Bitter Gourd",
+    "filename": "bitter_gourd.jpg",
+    "price": "23",
+    "rating":"5",
+    "quantity":"1kg"
+  },
+  {
+    "id":"2",
+    "name" : "Bottle Gourd",
+    "filename": "bottlegourd.jpg",
+    "price": "11",
+    "rating":"4",
+    "quantity":"1kg"
+  },
+  {
+    "id":"3",
+    "name" : "Brinjal",
+    "filename": "brinjal.jpg",
+    "price": "16",
+    "rating":"3",
+    "quantity":"1kg"
+  },
+  {
+    "id":"4",
+    "name" : "Brinjal long",
+    "filename": "brinjallong.jpg",
+    "price": "18",
+    "rating":"4",
+    "quantity":"1kg"
+  },
+  {
+    "id":"5",
+    "name" : "Broccoli",
+    "filename": "broccoli.jpg",
+    "price": "30",
+    "rating":"3",
+    "quantity":"1kg"
+  },
+  {
+    "id":"6",
+    "name" : "Cabbage",
+    "filename": "cabbage.jpg",
+    "price": "13",
+    "rating":"5",
+    "quantity":"1pc"
+  },
+  {
+    "id":"7",
+    "name" : "Capsicum",
+    "filename": "capsicum.jpg",
+    "price": "15",
+    "rating":"2",
+    "quantity":"1kg"
+  },
+  {
+    "id":"8",
+    "name" : "Capsicum(Red)",
+    "filename": "capsicumred.jpg",
+    "price": "15",
+    "rating":"3",
+    "quantity":"1kg"
+  },
+  {
+    "id":"9",
+    "name" : "Carrots",
+    "filename": "carrots.jpg",
+    "price": "21",
+    "rating":"4",
+    "quantity":"1kg"
+  },
+  {
+    "id":"10",
+    "name" : "Cauliflower",
+    "filename": "cauliflower.jpg",
+    "price": "13",
+    "rating":"2",
+    "quantity":"1pc"
+  },
+  {
+    "id":"11",
+    "name" : "Green Chillis",
+    "filename": "chilli.jpg",
+    "price": "23",
+    "rating":"5",
+    "quantity":"500g"
+  },
+  {
+    "id":"12",
+    "name" : "Cucumber",
+    "filename": "cucumber.jpg",
+    "price": "24",
+    "rating":"4",
+    "quantity":"1kg"
+  },
+  {
+    "id":"13",
+    "name" : "Green Coriander",
+    "filename": "green_coriander.jpg",
+    "price": "6",
+    "rating":"4",
+    "quantity":"500g"
+  },
+  {
+    "id":"14",
+    "name" : "Methi",
+    "filename": "methi_kas_2.jpg",
+    "price": "6",
+    "rating":"3",
+    "quantity":"500g"
+  },
+  {
+    "id":"15",
+    "name" : "Okra",
+    "filename": "okra_seeds.jpg",
+    "price": "14",
+    "rating":"4",
+    "quantity":"1kg" 
+  },
+  {
+    "id":"16",
+    "name" : "Onions",
+    "filename": "onion.jpg",
+    "price": "20",
+    "rating":"5",
+    "quantity":"1kg" 
+  },
+  {
+    "id":"17",
+    "name" : "Radish",
+    "filename": "radish.jpg",
+    "price": "12",
+    "rating":"3",
+    "quantity":"1kg"
+  },
+  {
+    "id":"18",
+    "name" : "Ridge Gourd",
+    "filename": "ridgegourd.jpg",
+    "price": "35",
+    "rating":"5",
+    "quantity":"1kg" 
+  },
+  {
+    "id":"19",
+    "name" : "Spinach",
+    "filename": "spinach.jpg",
+    "price": "10",
+    "rating":"3",
+    "quantity":"2pc" 
+  },
+  {
+    "id":"20",
+    "name" : "Tomatoes",
+    "filename": "tomato.jpg",
+    "price": "8",
+    "rating":"5",
+    "quantity":"1kg" 
+  }
+  ]

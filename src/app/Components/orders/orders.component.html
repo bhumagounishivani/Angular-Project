@@ -1,0 +1,24 @@
+<div>
+    <p id="heading">Your Orders</p>
+    <div *ngFor="let order of orders" fxLayoutAlign="center">
+        <div fxFlex="40%" fxFlex.xs="100%" fxFlex.sm="100%">
+            <mat-card>
+                <mat-card-content>
+                    <a [routerLink]="['/orderdetails',order.id]" style="color:black;text-decoration: none;">
+                        <div class="content">
+                            <img src="../../../assets/cart/{{order.filename}}" class="left">
+                            <div class="right">
+                                <div>
+                                    <p>{{order.name}}</p>
+                                    <p>Ordered on {{order.date}}</p>
+                                </div>
+                                <i class="fa fa-angle-right arrow"></i>
+                            </div>
+                        </div>
+                    </a>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+

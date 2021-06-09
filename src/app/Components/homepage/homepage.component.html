@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BigMart</title>
+</head>
+<body>
+    <div class="container">
+        <div class="slides fade">
+            <img src="../../../assets/banner/pic1.jpeg">
+        </div>
+        <div class="slides fade">
+            <img src="../../../assets/banner/pic3.jpg">
+        </div>
+        <a class="prev" (click)="calslides(-1)">&#10094;</a>
+        <a class="next" (click)="calslides(1)">&#10095;</a>
+    </div><br>
+    <div style="text-align: center;">
+        <span class="dot" (click)="currslide(1)"></span>
+        <span class="dot" (click)="currslide(2)"></span>
+    </div><br><br><br>
+    <app-homeproducts></app-homeproducts>
+</body>
+</html>

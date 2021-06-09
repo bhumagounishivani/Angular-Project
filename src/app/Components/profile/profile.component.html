@@ -1,0 +1,55 @@
+<div class="content">
+    <div class="header">
+        <div class="divusericon">
+            <i class="fa fa-user usericon" aria-hidden="true"></i>
+        </div>
+        <p id="username">{{user.name}}</p>
+    </div>
+    <div fxLayoutAlign="center">
+        <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%">
+            <mat-card>
+                <form (ngSubmit)="submit()">
+                    <div class="info infouser">
+                        <strong>Username</strong>: {{user.name}}&nbsp;&nbsp;<mat-icon id="buttonuser" (click)="displayname()">create</mat-icon>
+                    </div>
+                    <mat-form-field id="Name">
+                        <input matInput type="text" name="username" value="{{user.name}}">
+                        <mat-icon matSuffix>perm_identity</mat-icon>
+                    </mat-form-field>
+                    <div class="info">
+                        <strong>Email</strong>: {{user.email}}
+                    </div>
+                    <div class="info infopass">
+                        <strong>Password</strong>: **&nbsp;&nbsp;<mat-icon (click)="displaypass()" id="buttonpass">create</mat-icon>
+                    </div>
+                    <mat-form-field id="Password">
+                        <input value="{{user.password}}" matInput type="password" *ngIf="isActive">
+                        <input value="{{user.password}}" matInput type="text" *ngIf="!isActive">
+                        <mat-icon id="on" matSuffix (click)="display()">visibility</mat-icon>
+                        <mat-icon id="off" matSuffix (click)="notdisplay()">visibility_off</mat-icon>
+                    </mat-form-field>
+                    <div class="info infophone" *ngIf="phoneno">
+                        <strong>Phoneno</strong>: {{user.phonenumber}}&nbsp;&nbsp;<mat-icon id="buttonphone" (click)="displayphone()">create</mat-icon>
+                    </div>
+                    <mat-form-field id="Phoneno">
+                        <input matInput type="text" value="{{user.phonenumber}}" *ngIf="!phone">
+                        <input matInput type="text" *ngIf="phone">
+                        <mat-icon matSuffix> call</mat-icon>
+                    </mat-form-field>
+                    <div class="info infoaddress" *ngIf="address">
+                        <strong>Address</strong>: {{user.address}}&nbsp;&nbsp;<mat-icon id="buttonaddress" (click)="displayaddress()">create</mat-icon>
+                    </div>
+                    <mat-form-field id="Address">
+                        <textarea matInput *ngIf="add"></textarea>
+                        <textarea matInput *ngIf="!add" value="{{user.address}}"></textarea>
+                    </mat-form-field>
+                    <div>
+                        <button mat-raised-button id="Button" color="primary" type="submit">Save</button>
+                        <button mat-raised-button type="button" id="address" (click)="addaddress()"><mat-icon>add</mat-icon>Add Address</button>
+                        <button mat-raised-button type="button" id="phone" (click)="addphone()"><mat-icon>call</mat-icon>Add PhoneNo</button>
+                    </div>
+                </form>
+            </mat-card>
+        </div>
+    </div>
+</div>

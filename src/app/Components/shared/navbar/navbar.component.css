@@ -1,0 +1,148 @@
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+.search{
+    width:100%;
+    display:flex;
+}
+.searchTerm{
+    width:100%;
+    border: 3px solid#00B4CC;
+    border-right:none;
+    padding:5px;
+    height:15px;
+    border-radius: 5px 0 0 5px;
+    outline:none;
+    color: rgb(100, 89, 89);
+}
+
+.searchButton{
+    width: 40px;
+    height:31px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color:#fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.wrap{
+    margin-top: 5px;
+    width:30%;
+}
+
+mat-sidenav-content{
+    height:100vh;
+    z-index: 3;
+}
+
+mat-sidenav{
+    width:15%;
+}
+
+.cancel{
+    font-size: 20px;
+}
+
+.navitem{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.signin{
+    font-size: 12pt;
+    margin:0 4px;
+}
+.cart{
+    font-size: 15pt;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+    margin-left: -40px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    font-size:12pt;
+    border-color:#f1f1f1;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.user{
+    display: flex;
+    max-width:max-content;
+    margin-top:10px;
+}
+
+.iconuser{
+    font-size:20pt;
+    margin-right:5px;
+}
+
+.username{
+    font-size: 15pt;
+    margin:3px 0 0 5px;
+}
+
+.div1{
+    display: flex;
+}
+@media screen and (max-width:850px) {
+    .hid{
+        display: none;
+    }
+    .navitem{
+        display:block;
+    }
+    .hid1:nth-last-child(2){
+        border-top: 2px solid black;
+    }
+    .wrap{
+        width:100%;
+    }
+    mat-sidenav{
+        width:100%;
+    }
+}
+
+@media screen and (min-width:850px) {
+    mat-sidenav{
+        width: 25%;
+    }
+    .div1{
+        flex-direction: column;
+    }
+    .user{
+        margin-left:4px;
+    }
+}
+@media screen and (min-width:1501px) {
+    mat-sidenav{
+        width: 18%;
+    }
+}
+
+

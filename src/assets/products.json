@@ -1,0 +1,92 @@
+[
+    {
+      "id":"1",
+      "name" : "Bitter Gourd",
+      "filename": "bitter_gourd.jpg",
+      "price": "23",
+      "rating":"5",
+      "quantity":"1kg",
+      "type":"veg"
+    },
+    {
+        "id":"112",
+        "name" : "Pomegranate",
+        "filename": "pomegranate.jpg",
+        "price": "140",
+        "rating":"4",
+        "quantity":"2pc",
+        "type":"fruit"
+      },
+      {
+        "id":"101",
+        "name" : "Apple",
+        "filename": "apple.jpeg",
+        "price": "170",
+        "rating":"5",
+        "quantity":"5pc",
+        "type":"fruit"
+      },
+    {
+      "id":"5",
+      "name" : "Broccoli",
+      "filename": "broccoli.jpg",
+      "price": "30",
+      "rating":"3",
+      "quantity":"1kg",
+      "type":"veg"
+    },
+    {
+        "id":"105",
+        "name" : "Guava",
+        "filename": "guava.jpg",
+        "price": "49",
+        "rating":"4",
+        "quantity":"4pc",
+        "type":"fruit"
+      },
+    {
+      "id":"8",
+      "name" : "Capsicum(Red)",
+      "filename": "capsicumred.jpg",
+      "price": "15",
+      "rating":"3",
+      "quantity":"1kg",
+      "type":"veg"
+    },
+    {
+      "id":"14",
+      "name" : "Methi",
+      "filename": "methi_kas_2.jpg",
+      "price": "6",
+      "rating":"3",
+      "quantity":"500g",
+      "type":"veg"
+    },
+    {
+        "id":"108",
+        "name" : "Muskmelon",
+        "filename": "muskmelon.jpg",
+        "price": "20",
+        "rating":"4",
+        "quantity":"1pc",
+        "type":"fruit"
+      },
+    {
+      "id":"15",
+      "name" : "Okra",
+      "filename": "okra_seeds.jpg",
+      "price": "14",
+      "rating":"4",
+      "quantity":"1kg",
+      "type":"veg" 
+    },
+    {
+      "id":"110",
+      "name" : "Papaya",
+      "filename": "papaya.png",
+      "price": "27",
+      "rating":"3",
+      "quantity":"1pc",
+      "type":"fruit"
+    }
+  ]

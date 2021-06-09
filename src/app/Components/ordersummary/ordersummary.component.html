@@ -1,0 +1,33 @@
+<div>
+    <p class="header">Payment Summary</p>
+    <div fxLayoutAlign="center">
+      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="40%">
+        <mat-card>
+            <mat-card-content>
+                <div>
+                    <p class="caption">Item Total:</p>
+                    <span>{{strprice | currency:'INR'}}</span>
+                </div>
+                <div>
+                    <p class="caption">Delivery Taxes:</p>
+                    <span>{{70 | currency:'INR'}}</span>
+                </div>
+                <div>
+                    <p class="caption">Taxes:</p>
+                    <span>{{7.00 | currency:'INR'}}</span>
+                </div>
+                <div class="total">
+                    <strong>Grand Total:</strong>
+                    <span>{{price +77 | currency:'INR'}}</span>
+                </div>
+                <div class="button">
+                    <a [routerLink]="['/card']"><button mat-raised-button color="primary">Proceed to pay</button></a>
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <div style="font-size: 11pt; color: green;margin-top: 20px;">
+            <p>Delivered within 2 days</p>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<div>
+    <div fxLayoutAlign="center">
+      <div fxFlex="55%" fxFlex.xs="95%" fxFlex.sm="95%">
+        <mat-card>
+          <mat-card-content class="container">
+            <img mat-card-image src="../../../../assets/veg/{{veg.filename}}" class="left">
+            <div class="right">
+                {{veg.name}}({{veg.quantity}})<br><br>
+                <span style="color: red;">{{veg.price | currency:'INR'}}</span><br><br>
+                <div class="div1">
+                    <div class="innerdiv1">
+                            <p class="heading">Model#</p>
+                            <p>{{veg.id}}</p>
+                    </div>
+                    <div class="innerdiv1">
+                            <p class="heading">IN STOCK</p>
+                            <p>YES</p>    
+                    </div>
+                </div>
+                <div class="innerdiv1">
+                    <p class="heading">SELECT</p>
+                    <select (change)="pricecall($event)">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div><br><br>
+                <div class="div1">
+                    <a (click)="callPrice()" [routerLink]="['/ordersummary']"><button mat-raised-button color="primary">Buy Now</button></a>
+                    <a class="button" [routerLink]="['/cart']"><button mat-stroked-button color="primary"><mat-icon>add_shopping_cart</mat-icon> Add to Cart</button></a>
+                </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+</div>

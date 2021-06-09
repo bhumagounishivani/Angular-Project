@@ -1,0 +1,15 @@
+#header{
+    text-align: center;
+    font-size:20pt;
+    font-weight: bold;
+}
+
+.info{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12pt;
+    padding: 10px;
+}
+
+mat-card{
+    margin-top: 20px;
+}

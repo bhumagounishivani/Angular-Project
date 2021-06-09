@@ -1,0 +1,63 @@
+<div class="login-page">
+    <mat-card class="mat-elevation-z12">
+        <mat-card-title style="text-align: center;">SignIn/SignUp</mat-card-title>
+        <mat-tab-group mat-stretch-tabs class="tabs">
+            <mat-tab label="Sign In">
+                <mat-card-content>
+                    <form action="" [formGroup]="form1" (ngSubmit)="onSubmit()">
+                        <mat-form-field>
+                            <input matInput placeholder="Email" name="email" formControlName="email">
+                            <mat-error *ngIf="form1.controls['email'].errors?.required">Email is required</mat-error>
+                            <mat-error *ngIf="form1.controls['email'].errors?.InvalidEmail">You are not a user</mat-error>
+                            <mat-icon matSuffix>email</mat-icon>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input matInput placeholder="Password" type="password" name="password"  formControlName="password">
+                            <mat-error *ngIf="form1.controls['password'].errors?.required">Password is required</mat-error>
+                            <mat-error *ngIf="form1.controls['password'].errors?.InvalidPassword">Wrong password</mat-error>
+                            <mat-icon matSuffix>lock</mat-icon>
+                        </mat-form-field>
+                        <mat-checkbox>Remember Me!</mat-checkbox>
+                        <button mat-raised-button type="submit" color="primary" class="login-button">Sign In</button>
+                    </form>
+                </mat-card-content>
+            </mat-tab>
+            <mat-tab label="Sign Up">
+                <mat-card-content>
+                    <form action="" [formGroup]="form2" (ngSubmit)="onSubmit()">
+                        <mat-form-field>
+                            <input matInput placeholder="User Name" name="username" formControlName="username">
+                            <mat-error *ngIf="form2.controls['username'].errors?.required">Username is required</mat-error>
+                            <mat-error *ngIf="form2.controls['username'].errors?.pattern">Username is invalid</mat-error>
+                            <mat-icon matSuffix>perm_identity</mat-icon>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input matInput placeholder="Email" name="email" formControlName="email">
+                            <mat-error *ngIf="form2.controls['email'].errors && form2.controls['email'].errors.required">Email is required</mat-error>
+                            <mat-error *ngIf="form2.controls['email'].errors && form2.controls['email'].errors.email">Email is invalid</mat-error>
+                            <mat-icon matSuffix>email</mat-icon>
+                        </mat-form-field>
+                        <mat-form-field >
+                            <input matInput type="password" placeholder="New password" formControlName="password">
+                            <mat-error *ngIf="form2.controls['password'].errors && form2.controls['password'].errors.required">Password is required</mat-error>
+                            <mat-error *ngIf="form2.controls['password'].errors && form2.controls['password'].errors.minlength">Password must be of length 6</mat-error>
+                            <mat-icon matSuffix>lock</mat-icon>
+                          </mat-form-field>
+                        
+                          <mat-form-field >
+                            <input matInput type="password" placeholder="Confirm password" formControlName="repassword">
+                            <mat-error *ngIf="form2.controls['repassword'].errors && form2.controls['repassword'].errors.required">Confirm Password is required</mat-error>
+                            <mat-error *ngIf="form2.controls['repassword'].errors && form2.controls['repassword'].errors.minlength">Confirm Password must be of length 6</mat-error>
+                            <mat-error *ngIf="form2.controls['repassword'].errors?.NoPassswordMatch">Confirm Password & Password must be equal</mat-error>
+                            <mat-icon matSuffix>lock</mat-icon>
+                          </mat-form-field>
+                    
+                        <button mat-raised-button type="submit" color="primary" class="login-button">Sign In</button>
+                    </form>
+                </mat-card-content>
+            </mat-tab>
+        </mat-tab-group>
+        <p style="text-align: center;font-weight: bold;">or</p>
+        <button mat-raised-button class="login-button" (click)="signInWithGoogle()"><a class="fa fa-google"></a> Login with Google</button>
+    </mat-card>
+</div>

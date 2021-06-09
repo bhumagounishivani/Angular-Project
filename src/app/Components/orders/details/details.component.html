@@ -1,0 +1,74 @@
+<div>
+    <p id="heading">View Order Details</p>
+    <div fxLayoutAlign="center">
+        <div fxFlex="40%" fxFlex.xs="100%" fxFlex.sm="100%">
+            <mat-card>
+                <mat-card-content>
+                    <div class="content">
+                        <p class="header">Order Date: </p>
+                        <p>{{order.date}}</p>
+                    </div>
+                    <div class="content">
+                        <p class="header">Order #: </p>
+                        <p>{{order.id}}</p>
+                    </div>
+                    <div class="content">
+                        <p class="header">Order total: </p>
+                        <p>{{order.cost | currency:'INR'}}</p>
+                    </div>
+                    <div class="content">
+                        <p class="header">Status: </p>
+                        <p *ngIf="order.status=='delivered'" style="color: green;">{{order.status}}</p>
+                        <p *ngIf="order.status=='processing'" style="color: red;">{{order.status}}</p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    <p id="heading">Payment Information</p>
+    <div fxLayoutAlign="center">
+        <div fxFlex="40%" fxFlex.xs="100%" fxFlex.sm="100%">
+            <mat-card>
+                <mat-card-content>
+                    <div class="content">
+                        <p class="header">Billing Address: </p>
+                        <p>{{user.address}}</p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    <p id="heading">Purchase Details</p>
+    <div fxLayoutAlign="center">
+        <div fxFlex="40%" fxFlex.xs="100%" fxFlex.sm="100%">
+            <mat-card>
+                <mat-card-content>
+                    <div class="content">
+                        <img src="../../../assets/cart/{{order.filename}}" class="left">
+                        <div class="right">
+                            <div>
+                                <p>{{order.name}}</p>
+                                <p>Ordered on {{order.date}}</p>
+                                <p>Qty: {{order.quantity}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    <div fxLayoutAlign="center" style="margin-top:10px;">
+        <div fxFlex="40%" fxFlex.xs="100%" fxFlex.sm="100%">
+            <mat-card>
+                <mat-card-content>
+                    <div class="content">
+                        <strong style="padding-right: 10px;">Order Total: </strong>
+                        <span style="color:red;">{{order.cost | currency:'INR'}}</span>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+

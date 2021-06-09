@@ -1,0 +1,49 @@
+[{
+    "id" : "1",
+    "name" : "Ramesh",
+    "email": "ramesh123@gmail.com",
+    "password": "ram123",
+    "address":"Hno-1/A Sri Colony Bowenpally Secunderabad Telangana 500009",
+    "phonenumber" : "7025836223" 
+  },
+  {
+    "id" : "2",
+    "name" : "Vanajaa",
+    "email": "vanaja19@gmail.com",
+    "password": "vanaja123",
+    "address":"Hno-101 Sai Apartment Alwal Secunderabad Telangana 500010",
+    "phonenumber" : "7024387945" 
+  },
+  {
+    "id" : "3",
+    "name" : "Siya",
+    "email": "siyareddy@gmail.com",
+    "password": "siya2323",
+    "address":"flat no-304 Thirumala homes Bolarum Secunderabad Telangana 500015",
+    "phonenumber" : "6024387945" 
+  },
+  {
+    "id" : "4",
+    "name" : "Ganesh",
+    "email": "ganesh@gmail.com",
+    "password": "ganesh123",
+    "address":"Hno-2/2B RamNagar Colony Maktha Hyderabad Telangana 500049",
+    "phonenumber" : "5025667945" 
+  },
+  {
+    "id" : "5",
+    "name" : "Venkat",
+    "email": "venkat@gmail.com",
+    "password": "venkat1989",
+    "address":"flat no-202 Janapriya Apartments Hayathnagar Secunderabad Telangana 501505",
+    "phonenumber" : "8024388876" 
+  },
+  {
+    "id" : "6",
+    "name" : "B",
+    "email": "shivanibhumagouni@gmail.com",
+    "password": "shivan!25",
+    "address":"flat no-203 Janapriya Apartments Hayathnagar Secunderabad Telangana 501505",
+    "phonenumber" : "8024388877" 
+  }
+  ]

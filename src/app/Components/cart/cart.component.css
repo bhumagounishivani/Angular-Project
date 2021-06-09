@@ -1,0 +1,114 @@
+#heading{
+    font-size: 25pt;
+    text-align: center;
+    background-color: rgb(238, 235, 235);
+    padding:30px;
+}
+.img{
+    max-width:170px;
+    min-height: 150px;
+}
+
+.name{
+    display:flex;
+    align-items: center;
+}
+
+.title{
+    padding: 20px;
+    padding-top: 28px;
+    font-size:13pt;
+}
+.mat-header-cell,.mat-cell{
+    text-align: center;
+    padding:20px;
+}
+
+#select{
+    padding: 5px;
+    width:50px;
+}
+.buttons{
+    display: flex;
+    width:max-content;
+    margin:auto;
+}
+
+td.mat-cell {
+    border-bottom-style: none;
+}
+
+.card{
+    text-align: center;
+}
+
+.caption{
+    background-color: rgb(191, 238, 144);
+    text-align: center;
+    font-size:13pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:10px;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 40em) {
+    th:not(:first-child) {
+        display: none;
+    }
+    td, th {
+        display: block;
+    }
+    .name{
+        flex-direction: column;
+    }
+
+    .title{
+        padding-bottom: 0%;
+    }
+    .mat-cell{
+        padding: 3px 20px;
+    }
+    td:last-child{
+        padding-bottom: 30px;
+    }
+    mat-card{
+        margin-top: 10px;
+    }
+    table{
+        width:100%;
+    }
+    #heading{
+        font-size: 20pt;
+    }
+}
+
+@media screen and (max-width:349px) {
+    .caption{
+        margin-top: 20px;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:600px) {
+    .img{
+        max-width:300px;
+        min-height: 240px;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:900px) {
+    mat-card{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width:900px)  {
+    mat-card{
+        margin-top: 10px;
+    }
+}
+
+
+

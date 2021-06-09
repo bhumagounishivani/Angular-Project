@@ -1,0 +1,8 @@
+<p id="heading">Top Sellers</p>
+
+<carousel>
+    <div class="carousel-cell" *ngFor="let p of products">
+        <a *ngIf="p.type=='fruit'" [routerLink]="['/product1',p.id]"><img src="../../../../assets/cart/{{p.filename}}"></a>
+        <a *ngIf="p.type=='veg'" [routerLink]="['/product2',p.id]"><img src="../../../../assets/cart/{{p.filename}}"></a>
+    </div>
+</carousel>

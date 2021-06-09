@@ -1,0 +1,44 @@
+#heading{
+    font-size: 25pt;
+    text-align: center;
+    background-color: rgb(238, 235, 235);
+    padding:30px;
+}
+
+.left {
+    padding: 10px;
+    max-width: 240px;
+    height:170px;
+}
+  
+.right {
+    padding:10px;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:12pt;
+    max-width: 50%;
+    margin:auto;
+}
+
+.content{
+    display: flex;
+}
+.arrow{
+    font-size:16pt;
+    font-weight: bold;
+}
+
+@media screen and (max-width:400px) {
+    .content{
+        flex-direction: column;
+    }
+    .left{
+        margin:auto;
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width:1500px) {
+    .mat-card{
+        width:550px;
+    }
+}

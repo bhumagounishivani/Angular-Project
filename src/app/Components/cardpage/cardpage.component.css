@@ -1,0 +1,72 @@
+.header{
+    text-align:center;
+    font-size:18pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buttondiv{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom:20px;
+}
+mat-form-field{
+    display: block;
+    width:80%;
+    margin:auto;
+}
+
+input{
+    padding-top:10px;
+}
+
+.fa-cc-visa,.fa-cc-amex,.fa-cc-mastercard{
+    font-size: 25px;
+}
+
+.divexpiry{
+    display: flex;
+    width:80%;
+    margin:auto;
+}
+
+.divbutton{
+    text-align: center;
+}
+
+#paypalinfo{
+    display: none;
+}
+
+.paypallogin{
+    display: flex;
+    flex-direction: column;
+}
+
+#login{
+    max-width:130px;
+    margin-top:20px;
+}
+
+@media screen and (max-width:600px) {
+    mat-form-field{
+        width:100%;
+    }
+    .divexpiry{
+        flex-direction: column;
+        width:100%;
+    }
+}
+
+@media screen and (max-width:260px) {
+    .buttondiv{
+        flex-direction: column;
+        margin: auto;
+    }
+    #paypal{
+        margin-top: 10px;
+    }
+    #info{
+        margin-top:20px;
+    }
+}
