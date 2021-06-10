@@ -19,10 +19,10 @@
                     <div class="info">
                         <strong>Email</strong>: {{user.email}}
                     </div>
-                    <div class="info infopass">
+                    <div class="info infopass" *ngIf="password">
                         <strong>Password</strong>: **&nbsp;&nbsp;<mat-icon (click)="displaypass()" id="buttonpass">create</mat-icon>
                     </div>
-                    <mat-form-field id="Password">
+                    <mat-form-field id="Password" *ngIf="password">
                         <input value="{{user.password}}" matInput type="password" *ngIf="isActive">
                         <input value="{{user.password}}" matInput type="text" *ngIf="!isActive">
                         <mat-icon id="on" matSuffix (click)="display()">visibility</mat-icon>

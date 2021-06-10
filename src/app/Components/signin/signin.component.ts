@@ -107,6 +107,7 @@ export class SigninComponent implements OnInit {
   }
 
   public signInWithGoogle(): void {
+    //console.log('hello')
     this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
   }
 }

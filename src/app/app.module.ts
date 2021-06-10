@@ -58,7 +58,7 @@ export function tokenGetter3(){
 }
 
 
-const CLIENT_ID = "888999132384-2ag7l0ip80r61sib2veurlocue30s3c1.apps.googleusercontent.com";
+const CLIENT_ID = "888999132384-9sul3ctej1trtotj1jjami2luqlqle8g.apps.googleusercontent.com";
 @NgModule({
   declarations: [
     AppComponent,

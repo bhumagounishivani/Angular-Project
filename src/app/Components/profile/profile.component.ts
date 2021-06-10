@@ -17,6 +17,7 @@ export class ProfileComponent implements OnInit,AfterContentChecked{
   address=false;
   phoneno = false;
   phone = false;
+  password=false;
   ngOnInit(): void {
   }
   ngAfterContentChecked(){
@@ -28,6 +29,9 @@ export class ProfileComponent implements OnInit,AfterContentChecked{
         }
         if(this.user.hasOwnProperty('phonenumber') && this.user.phonenumber!="" ){
           this.phoneno=true;
+        }
+        if(this.user.hasOwnProperty('password') && this.user.password!="" ){
+          this.password=true;
         }
         break;
       }
